@@ -1,3 +1,6 @@
+body{
+    height: 100vh;
+}
 
 .logo_small{
     height: 70px;
@@ -11,8 +14,9 @@
 }
 
 .container_main{
-    width:calc(100% - 70px);
-    height: calc(100vh - 88px);
+    
+    padding-left :70px;
+    padding-top:88px;
     overflow-y: auto;
 }
 
@@ -22,6 +26,10 @@
     }
 
     .container_main{
-        width: calc(100% - 150px);
+        padding-left: 150px;
     }
+}
+
+th img{
+    height: 40px;
 }
