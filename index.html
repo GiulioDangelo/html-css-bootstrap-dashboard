@@ -12,17 +12,17 @@
     
     <!-- nav -->
     <nav class="navbar fixed-top z-3 flex-nowrap bg-body-tertiary">
-        <img src="/img/mobile-logo.png" class="logo_small d-sm-none" alt="">
-        <img class="logo_big d-none d-sm-block " src="img/logo.svg" alt="">
+        <img src="/img/mobile-logo.png" class="logo_small d-md-none" alt="">
+        <img class="logo_big d-none d-md-block " src="img/logo.svg" alt="">
         <div class="input-group p-2">
 
             <input type="text " class="form-control" placeholder="Prova a cercare: Lezioni di Lavarel" aria-label="Username"
                 aria-describedby="basic-addon1">
 
             <div class="text-center p-3 d-flex align-items-center">
-                <i class="fa-solid fa-list-ul mx-2 d-none d-sm-block "></i>
-                <i class="fa-regular fa-circle-question mx-2 d-none d-sm-block "></i>
-                <i class="fa-solid fa-ellipsis-vertical mx-2 d-none d-sm-block "></i>
+                <i class="fa-solid fa-list-ul mx-2 d-none d-md-block "></i>
+                <i class="fa-regular fa-circle-question mx-2 d-none d-md-block "></i>
+                <i class="fa-solid fa-ellipsis-vertical mx-2 d-none d-md-block "></i>
                 
                 <div class="dropdown dropstart">
 
@@ -50,60 +50,99 @@
     <!-- aside -->
 
     <div class="aside fixed-bottom z-2">
-         <div class="aside-content text-white d-flex flex-column ">
+        <div class="aside-content text-white h-100 d-flex flex-column align-items-center justify-content-between fs-4 py-4">
 
-            <div class="aside-top">
-                <div class="icon-nav"> <i class="fa-solid fa-house"></i> <span class="hidden-text">Home</span> </div>
-                <div class="icon-nav"> <i class="fa-solid fa-chart-simple"></i> <span class="hidden-text">Stats</span> </div>
-                <div class="icon-nav"> <i class="fa-solid fa-signal"></i> <span class="hidden-text">Signal</span> </div>
+            <div class="aside-top ">
+                <div class="icon-nav"> <i class="fa-solid fa-house"></i> <span class="hidden-text d-none d-md-inline-block">Home</span> </div>
+                <div class="icon-nav py-3"> <i class="fa-solid fa-chart-simple"></i> <span class="hidden-text d-none d-md-inline-block">Stats</span> </div>
+                <div class="icon-nav"> <i class="fa-solid fa-signal"></i> <span class="hidden-text d-none d-md-inline-block">Signal</span> </div>
             </div>
 
-            <div class="aside-bottom"></div>
-
-         </div>
+            <div class="aside-bottom">
+                <div class="icon-nav"> <i class="fa-solid fa-gear"></i> <span class="hidden-text d-none d-md-inline-block">Admin</span> </div>
+            </div>
+            
+        </div>
     </div>
 
     <!-- aside -->
 
+
+
     <!-- container main -->
-    <main>
+    <div class="container-fluid container_main">
 
-        <div class="container_blue_nav bg-primary p-3 text-white">
-            <div class="row">
+        <div class=" container_blue_nav bg-primary p-3 text-white">
+            <div class="container-fluid">
+                <div class="row">
 
-                <div class="col-12 m col-md-4 mt-3 order-md-1 ">
-                    <div class="add-student">
-                        nuovo studente
-                        <i class="fa-regular fa-square-plus"></i>
-                    </div>
-                </div>
-
-                <div class="col-12 col-md-4 mt-3">
-
-                    <div class="boolean">
-                        <span class="fw-semibold">Boolean</span> <span class="badge rounded-pill text-bg-info">Primary</span>
+                    <div class="col-12 m col-md-4 mt-3 order-md-1 ">
+                        <div class="add-student">
+                            nuovo studente
+                            <i class="fa-regular fa-square-plus"></i>
+                        </div>
                     </div>
 
-                    <span class="badge rounded-pill text-bg-info">Primary</span>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <i class="fa-solid fa-chevron-right"></i>
-                    <span class="badge rounded-pill text-bg-info">+</span>
+                    <div class="col-12 col-md-4 mt-3">
 
-                </div>
+                        <div class="boolean">
+                            <span class="fw-semibold">Boolean</span> <span class="badge rounded-pill text-bg-info">Primary</span>
+                        </div>
 
-                <div class="col-12 col-md-4 mt-3">
-                    <div class="online-student">
-                        Studenti online negli ultimi 30 minuti
+                        <span class="badge rounded-pill text-bg-info">Primary</span>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <i class="fa-solid fa-chevron-right"></i>
+                        <span class="badge rounded-pill text-bg-info">+</span>
+
                     </div>
 
-                    <span class="fs-1">125</span>
+                    <div class="col-12 col-md-4 mt-3">
+                        <div class="online-student">
+                            Studenti online negli ultimi 30 minuti
+                        </div>
+
+                        <span class="fs-1">125</span>
+                    </div>
+
                 </div>
+            </div>
+        </div>
+
+        <div class="container-fluid py-5">
+            <div class="card">
+
+                <div class="card-header fw-semibold fs-3">
+                    Prosime classi
+                </div>
+
+                <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <th scope="col">Nome</th>
+                        <th scope="col">Stato</th>
+                        <th scope="col">Azioni </th>
+                        <th scope="col" class="d-none">Last</th>
+                        <th scope="col" class="d-none">Handle</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <th scope="row"><img src="img/class-avatar.jpg" class="w-25"></th>
+                        <td>Mark</td>
+                        <td>Otto</td>
+                        <td class="d-none"></td>>@mdo</td>
+                        <td class="d-none"></td>>dasd</td>
+                      </tr>
+                    </tbody>
+                  </table>
 
             </div>
         </div>
 
+    
 
-    </main>
+
+    </div>
 
 
 

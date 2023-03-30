@@ -4,21 +4,16 @@
 }
 
 .aside{
-    height: calc( 100vh - 88px ) ;
+    height: calc(100vh - 88px) ;
     width: 70px;
     background-color: rgb(11, 35, 57);
     background-image: url(/img/sidebar-bg.png) ;
 }
 
-main{
-    position: fixed;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    width: 100vw;
-    margin-left: 70px;
-    margin-top: 88px;
-    overflow-x: hidden;
+.container_main{
+    width:calc(100% - 70px);
+    height: calc(100vh - 88px);
+    overflow-y: auto;
 }
 
 @media (min-width:768px){
@@ -26,7 +21,7 @@ main{
         width: 150px;
     }
 
-    main{
-        margin-left: 150px;
+    .container_main{
+        width: calc(100% - 150px);
     }
 }
