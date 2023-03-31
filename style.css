@@ -29,6 +29,10 @@ body{
     .container_main{
         padding-left: 150px;
     }
+
+    .offcanvas{
+        width: 50% !important;
+    }
 }
 
 .badge{
